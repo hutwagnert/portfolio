@@ -298,7 +298,7 @@ p {
 .team-member-info {
     padding: 10px 0 30px;
 }
-h4.team-member-name {
+h3.team-member-name {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -471,4 +471,12 @@ ul.pricing-spec li p {
     text-transform:uppercase;
     font-weight:300;
     margin-top:0;
+}
+
+.container-for-updates {
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    margin:0 11% 0 11%;
+    padding: 0 0 0 0;
 }
