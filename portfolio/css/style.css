@@ -1,0 +1,441 @@
+/*==============================
+DEFAUL VALUES
+font Family: ROBOTO CONDENSED
+
+GREENSHISH-BLUE: #34C6D3 (BUTTONS, ICONS, LINES AND BACKGOROUND)
+STEEL GRAY     : #41464B (HEADINGS)
+BLUE BAYOUX    : #64707B (PARAGRAPHS)
+WHITE          : #FFF       (TEST WITH BLACK BACKGROUNDS)
+BLACK          : #000   
+==============================*/
+/*General CSS section*/
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    margin:0;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #41464b;
+}
+
+p {
+    color: #64707b;
+    font-size: 16px;
+    font-weight: 300;
+}
+/*========================================================
+                        Home
+=========================================================*/
+
+#home {
+    height: 100%;
+}
+
+#home-cover {
+    height: 100%;
+    background-image: url("../img/bg-home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#home-content-box {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+    /* text-align: center;*/
+}
+
+#home-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+/*========================================================
+                        Parallax Gen
+=========================================================*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*=====================================
+            Buttons
+======================================*/
+
+.btn-general {
+    border-color: #fff;
+    border-width: 2px;
+    border-radius: 0;
+    padding: 12px 26px 12 px 26 px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-white:focus,
+.btn-white:hover {
+    background-color: #fff;
+    color: #41464b;
+}
+
+.btn-blue {
+    border-color: #34c6d3;
+    color: #34c6d3;
+}
+
+.btn-blue:focus,
+.btn-blue:hover {
+    background-color: #34c6d3;
+    color: #fff;
+}
+
+/*========================================================
+                        animation
+=========================================================*/
+#home-btn,
+#home-cover,
+#home-heading {
+    animation-duration: 0.5s;
+}
+
+#home-cover {
+    animation-delay: 0.1s;
+    animation-duration: 0.5s;
+}
+
+#home-heading {
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+}
+
+#home-btn {
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+}
+/*========================================================
+                        content (generic)
+=========================================================*/
+.content-box {
+    padding: 60px 0;
+}
+.content-title h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px;
+}
+.content-title-white h3 {
+    color: #fff;
+
+}
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #34c6d3;
+    margin: 0 auto 30px;
+}
+/*========================================================
+                        Services
+=========================================================*/
+
+.service-item {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.service-item-title h3 {
+    font-size: 20px;
+    font-width: 400;
+    margin: 0 0 2px;
+}
+
+.service-item-desc p {
+    margin: 0;
+    padding-left: 85px;
+
+}
+
+.service-item-icon i {
+    color: #34c6d3;
+    float: left;
+    padding: 15px;
+    margin: 0 25px 25px 0;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+
+}
+.service-item:hover .service-item-icon i {
+    color: #fff;
+    background-color: #34c6d3;
+}
+
+/*========================================================
+                        About
+=========================================================*/
+#about-content-box {
+    float: left;
+    height: 700px;
+    width: 250px;
+
+}
+#about-content-box-outer {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#about-content-box-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#about .content-title h3 {
+    text-align: left;
+}
+#about .content-title-underline {
+    margin: 0 0 30px;
+}
+#about-desc p {
+    margin: 0 0 30px;
+}
+
+#about-bg-diagonal {
+    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url("../img/bg-about.jpg");
+    clip-path: polygon(0 0,100% 0,100% 100%,50% 100%);
+}
+/*========================================================
+                        wrok
+=========================================================*/
+#work-content-box-inner {
+    padding: 0;
+}
+.img-wrapper img {
+    width: 320px;
+    height: 320px;
+    transition: transform 0.5s;
+}
+.img-wrapper {
+    overflow: hidden;
+}
+.img-wrapper:focus img,
+.img-wrapper:hover img {
+    transform: scale(1.5);
+}
+/*========================================================
+                        team member
+===========================================*/
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #34c6d3;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #91dde4;
+}
+/*========================================================
+                        team
+===========================================*/
+.team-member {
+    margin: 0 15px;
+}
+.team-member-info {
+    padding: 10px 0 30px;
+}
+h4.team-member-name {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+h4.team-member-designation {
+    color: #34c6d3;
+    font-size: 15px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+/*========================================================
+                        Social icons
+===========================================*/
+.social-list {
+    padding-left: 0;
+
+}
+.social-list li {
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 10px 6px 0 0;
+}
+.social-icon i {
+    font-size: 17px;
+}
+.icon-gray i {
+    color: #64707b;
+}
+
+.social-icon i:hover {
+    color: #34c6d3;
+}
+
+/*========================================================
+                        testimonials
+===========================================*/
+#customers-testimonials img {
+    border-radius: 50%;
+    max-width: 120px;
+    margin: 0 auto;
+}
+#testimonials-cover {
+    background-image: url("../img/bg-testimonials.jpg");
+}
+#testimonials .content-box {
+    background-color: rgba (0,0,0,0.1);
+}
+#customers-testimonials blockquote {
+    padding: 6px 150px;
+    border: 0;
+    font-family: Georgia,sans-seriff;
+    font-style: italic;
+    color: #fff;
+
+}
+#customers-testimonials blockquote p {
+    color: #fff;
+    position:relative;
+}
+#customers-testimonials blockquote::after,
+#customers-testimonials blockquote::before {
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    
+}
+#customers-testimonials blockquote p::before {
+    content: "\201C";
+
+}
+#customers-testimonials blockquote p::after{
+    content: "\201D";
+
+}
+.testimonial-author p{
+    color:#fff;
+    font-size:17px;
+}
+.testimonial-author p strong{
+    display:block;
+}
+
+/*------------------------
+    Pricing
+-------------------------*/
+.pricing-box {
+    border:3px solid #34c6d3;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+h4.pricing-title{
+background-color:#34c6d3;
+color:#fff;
+display:inline-block;
+padding:7px 15px;
+font-size:14px;
+font-weight:700;
+text-transform:uppercase;
+margin:0 0 30px 0;
+}
+h3.pricing-value{
+    font-size:60px;
+    font-weight:700;
+}
+
+h3.pricing-value sup{
+    font-size:28px;
+    font-weight:normal;
+    vertical-align: super;
+}
+ul.pricing-spec{
+    list-style:none;
+    padding-left:0;
+    margin: 20px 0 60px 0;
+}
+ul.pricing-spec li p {
+    font-weight:400;
+    text-transform:uppercase;
+}
+.pricing-box-lg{
+    padding: 90px 0;
+    margin:0;
+    background-color:#34c6d3;
+
+}
+.pricing-box-lg h4.pricing-title{
+    color:#34c6d3;
+    background-color:#fff;
+}
+.pricing-box-lg ul.pricing-spec li p{
+    color:#fff;
+
+}
+
+/*========================================================
+                        Stats
+=========================================================*/
+
+#stats-cover {
+    background-image :url("../img/bg-stats.jpg");
+
+}
+#stats .content-box{
+    background-color:rgba(0,0,0, .8);
+
+}
+.stats-item {
+    padding:100px 0;
+
+}
+.stats-item i {
+    color:#34c6d3;
+}
+.stats-item h2{
+    color:#fff;
+    font-size:35px;
+    font-weight:700;
+    margin-top:15px;
+    margin-bottom: 1px;
+}
+.stats-item p{
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:300;
+    margin-top:0;
+}
