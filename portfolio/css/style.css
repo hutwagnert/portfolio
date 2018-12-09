@@ -39,7 +39,7 @@ p {
 
 #home-cover {
     height: 100%;
-    background-image: url("../img/bg-home.jpg");
+    background-image: url("../img/image.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -445,7 +445,7 @@ ul.pricing-spec li p {
 =========================================================*/
 
 #stats-cover {
-    background-image :url("../img/bg-stats.jpg");
+    background-image :url("../img/secondimage.png");
 
 }
 #stats .content-box{

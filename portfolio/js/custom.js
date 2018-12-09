@@ -52,3 +52,25 @@ $(function(){
         time:3000
     })
 });
+    /*========================================================
+                        on clicks
+=========================================================*/
+$(document).on("click",'.linkedin', function() {
+    window.open('https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile');
+     });
+     $(document).on("click",'.github', function() {
+        window.open('https://github.com/hutwagnert');
+         });
+         $(document).on("click",'.resumet', function() {
+            window.open('https://github.com/hutwagnert');
+             });
+             function copyToClipboard() {
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val($('#clickcopy').text()).select();
+                document.execCommand("copy");
+                $temp.remove();
+              }
+              $(document).on("click",'.emailcopier', function() {
+                copyToClipboard();
+                 });
