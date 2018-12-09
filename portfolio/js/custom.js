@@ -74,3 +74,17 @@ $(document).on("click",'.linkedin', function() {
               $(document).on("click",'.emailcopier', function() {
                 copyToClipboard();
                  });
+
+                 $(document).on("click",'.lirisearch', function() {
+                    window.open('https://github.com/hutwagnert/liri');
+                      });
+                    $(document).on("click",'.giphy', function() {
+                    window.open('https://hutwagnert.github.io/unit-6/unit-6-giphy/');
+                    });
+                    $(document).on("click",'.rpg', function() {
+                    window.open('https://hutwagnert.github.io/unit-7/');
+                     });
+                    $(document).on("click",'.project', function() {
+                    window.open('https://hutwagnert.github.io/TH-G-TT-WW-group-project-1/');
+                     });
+                    
