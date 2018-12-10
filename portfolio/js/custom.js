@@ -71,20 +71,64 @@ $(document).on("click",'.linkedin', function() {
                 document.execCommand("copy");
                 $temp.remove();
               }
-              $(document).on("click",'.emailcopier', function() {
-                copyToClipboard();
-                 });
-
+            //   $(document).on("click",'.emailcopier', function() {
+            //     copyToClipboard();
+            //      });
+var currentid ="";
                  $(document).on("click",'.lirisearch', function() {
-                    window.open('https://github.com/hutwagnert/liri');
+                    $('#popupmodal').modal('show');
+                    currentid=this.id;
+                   // window.open('https://github.com/hutwagnert/liri');
                       });
                     $(document).on("click",'.giphy', function() {
-                    window.open('https://hutwagnert.github.io/unit-6/unit-6-giphy/');
+                        $('#popupmodal').modal('show');
+                        currentid=this.id;
                     });
                     $(document).on("click",'.rpg', function() {
-                    window.open('https://hutwagnert.github.io/unit-7/');
+                        $('#popupmodal').modal('show');
+                        currentid=this.id;
                      });
                     $(document).on("click",'.project', function() {
-                    window.open('https://hutwagnert.github.io/TH-G-TT-WW-group-project-1/');
+                        $('#popupmodal').modal('show');
+                        currentid=this.id;  
                      });
-                    
+
+
+
+                     $(document).on("click",'.contactme', function() {
+                        
+                        $('#mymodal').modal('show');
+                         });
+function hidemodal(){
+    $('#popupmodal').modal('hide');
+}
+function linksearch(){
+    console.log(currentid);
+    if(currentid === 'project'){
+ window.open('https://hutwagnert.github.io/TH-G-TT-WW-group-project-1/');
+    }else if(currentid ==='rpg'){
+window.open('https://hutwagnert.github.io/unit-7/');
+    } else if(currentid==='giphy'){
+window.open('https://hutwagnert.github.io/unit-6/unit-6-giphy/');
+    }else if(currentid ==='lirisearch'){
+window.open('https://github.com/hutwagnert/liri'); 
+    }else{
+        console.log("error");
+    }
+    hidemodal();
+}
+function githubsearch(){
+    console.log(currentid);
+    if(currentid === 'project'){
+ window.open('https://github.com/hutwagnert/TH-G-TT-WW-group-project-1');
+    }else if(currentid ==='rpg'){
+window.open('https://github.com/hutwagnert/unit-7');
+    } else if(currentid==='giphy'){
+window.open('https://github.com/hutwagnert/unit-6');
+    }else if(currentid ==='lirisearch'){
+window.open('https://github.com/hutwagnert/liri'); 
+    }else{
+        console.log("error");
+    }
+    hidemodal();
+}
