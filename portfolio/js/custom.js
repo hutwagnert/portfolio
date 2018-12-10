@@ -131,3 +131,18 @@ window.open('https://github.com/hutwagnert/liri');
     }
     hidemodal();
 }
+    /*========================================================
+                        copy resume
+=========================================================*/
+
+document.getElementById("cp_btn").addEventListener("click", copy_password);
+
+function copy_password() {
+    var copyText = document.getElementById("pwd_spn");
+    var textArea = document.createElement("textarea");
+    textArea.value = copyText.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("Copy");
+    textArea.remove();
+}
