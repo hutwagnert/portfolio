@@ -62,7 +62,7 @@ $(document).on("click",'.linkedin', function() {
         window.open('https://github.com/hutwagnert');
          });
          $(document).on("click",'.resumet', function() {
-            window.open('https://github.com/hutwagnert');
+            window.open('https://hutwagnert.github.io/resume/resume.html');
              });
              function copyToClipboard() {
                 var $temp = $("<input>");
@@ -78,7 +78,6 @@ var currentid ="";
                  $(document).on("click",'.lirisearch', function() {
                     $('#popupmodal').modal('show');
                     currentid=this.id;
-                   // window.open('https://github.com/hutwagnert/liri');
                       });
                     $(document).on("click",'.giphy', function() {
                         $('#popupmodal').modal('show');
