@@ -12,12 +12,17 @@ BLACK          : #000
 body,
 html {
     height: 100%;
+<<<<<<< HEAD
     width:100vw;
+=======
+    max-width:100%;
+>>>>>>> b454098e66359d6bdaec0bfc89c075f929b30cfe
 }
 
 body {
     font-family: "Roboto Condensed", sans-serif;
     margin:0;
+    max-width:100%;
 }
 
 h3 {
@@ -41,7 +46,7 @@ p {
 
 #home-cover {
     height: 100%;
-    background-image: url("../img/image.png");
+    background-image: url("../img/image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -70,14 +75,19 @@ p {
 /*========================================================
                         Nav bar
 =========================================================*/
+.nav-wrap{
+    position: relative;
+    max-width:100%;
+    
 
+}
 
 .navbar {
-    width:100%;
+   
+    max-width:100%;
     padding: 0 10px 0 10px;
-    background-color: #11847e;
-    color:black;
-    position: fixed;
+
+    position: absolute;
     top:0;
     z-index: 4;
     
@@ -326,7 +336,7 @@ h4.team-member-designation {
     margin: 0 auto;
 }
 #testimonials-cover {
-    background-image: url("../img/thirdimage.png");
+    background-image: url("../img/thirdimage.jpg");
 }
 #testimonials .content-box {
     background-color: rgba (0,0,0,0.1);
@@ -433,7 +443,7 @@ ul.pricing-spec li p {
     width:100vw;
 }
 #stats-cover {
-    background-image :url("../img/secondimage.png");
+    background-image :url("../img/secondimage.jpg");
 
 }
 #stats .content-box{
