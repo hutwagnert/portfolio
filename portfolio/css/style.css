@@ -12,6 +12,7 @@ BLACK          : #000
 body,
 html {
     height: 100%;
+    width:100vw;
 }
 
 body {
@@ -35,6 +36,7 @@ p {
 
 #home {
     height: 100%;
+    width:100vw;
 }
 
 #home-cover {
@@ -149,6 +151,9 @@ p {
 /*========================================================
                         animation
 =========================================================*/
+#home{
+    width:100vw;
+}
 #home-btn,
 #home-cover,
 #home-heading {
@@ -193,7 +198,10 @@ p {
 /*========================================================
                         Services
 =========================================================*/
+#services{
 
+    width:100vw;
+}
 .service-item {
     padding: 20px 0;
     margin-bottom: 20px;
@@ -229,6 +237,10 @@ p {
 /*========================================================
                         About
 =========================================================*/
+#about{
+
+    width:100vw;
+}
 #about-content-box {
     float: left;
     height: 700px;
@@ -263,24 +275,7 @@ p {
     background-image: url("../img/bg-about.jpg");
     clip-path: polygon(0 0,100% 0,100% 100%,50% 100%);
 }
-/*========================================================
-                        wrok
-=========================================================*/
-#work-content-box-inner {
-    padding: 0;
-}
-.img-wrapper img {
-    width: 320px;
-    height: 320px;
-    transition: transform 0.5s;
-}
-.img-wrapper {
-    overflow: hidden;
-}
-.img-wrapper:focus img,
-.img-wrapper:hover img {
-    transform: scale(1.5);
-}
+
 /*========================================================
                         team member
 ===========================================*/
@@ -293,6 +288,9 @@ p {
 /*========================================================
                         team
 ===========================================*/
+#team{
+    width:100vw;
+}
 .team-member {
     margin: 0 15px;
 }
@@ -313,38 +311,15 @@ h4.team-member-designation {
     letter-spacing: 1px;
     margin-top: 5px;
 }
-/*========================================================
-                        Social icons
-===========================================*/
-.social-list {
-    padding-left: 0;
 
-}
-.social-list li {
-    list-style: none;
-    display: inline-block;
-    width: 32px;
-    height: 32px;
-    margin: 10px 6px 0 0;
-}
-.social-icon i {
-    font-size: 17px;
-}
-.icon-gray i {
-    color: #64707b;
-}
-
-.social-icon i:hover {
-    color: #34c6d3;
-}
-.cp_btn hover{
-    color: #34c6d3;
-
-}
 
 /*========================================================
                         testimonials
 ===========================================*/
+#testimonials {
+
+    width:100vw;
+}
 #customers-testimonials img {
     border-radius: 50%;
     max-width: 120px;
@@ -396,6 +371,11 @@ h4.team-member-designation {
 /*------------------------
     Pricing
 -------------------------*/
+#pricing{
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+    width:100vw;
+}
 .pricing-box {
     border:3px solid #34c6d3;
     padding: 50px 0;
@@ -448,7 +428,10 @@ ul.pricing-spec li p {
 /*========================================================
                         Stats
 =========================================================*/
+#stats{
 
+    width:100vw;
+}
 #stats-cover {
     background-image :url("../img/secondimage.png");
 
