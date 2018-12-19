@@ -12,11 +12,7 @@ BLACK          : #000
 body,
 html {
     height: 100%;
-<<<<<<< HEAD
     width:100vw;
-=======
-    max-width:100%;
->>>>>>> b454098e66359d6bdaec0bfc89c075f929b30cfe
 }
 
 body {
@@ -77,14 +73,14 @@ p {
 =========================================================*/
 .nav-wrap{
     position: relative;
-    max-width:100%;
+    width:100vw;
     
 
 }
 
 .navbar {
    
-    max-width:100%;
+   width:100vw;
     padding: 0 10px 0 10px;
 
     position: absolute;
@@ -282,12 +278,12 @@ p {
     width: 60%;
     height: 700px;
     float: right;
-    background-image: url("../img/bg-about.jpg");
+    background-color:#41464b;
     clip-path: polygon(0 0,100% 0,100% 100%,50% 100%);
 }
 
 /*========================================================
-                        team member
+                        team member background-image: url("../img/bg-about.jpg");
 ===========================================*/
 .owl-theme .owl-dots .owl-dot.active span {
     background-color: #34c6d3;
@@ -342,7 +338,7 @@ h4.team-member-designation {
     background-color: rgba (0,0,0,0.1);
 }
 #customers-testimonials blockquote {
-    padding: 6px 150px;
+    padding: 0px 150px;
     border: 0;
     font-family: Georgia,sans-seriff;
     font-style: italic;
@@ -378,6 +374,18 @@ h4.team-member-designation {
     display:block;
 }
 
+
+.testimonial-author i {
+    color: #34c6d3;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.testimonial-author i:hover .testimonial-author i{
+    color: #fff;
+    background-color: #34c6d3;
+}
 /*------------------------
     Pricing
 -------------------------*/
@@ -441,6 +449,9 @@ ul.pricing-spec li p {
 #stats{
 
     width:100vw;
+}
+.statbox{
+    width:100vw;  
 }
 #stats-cover {
     background-image :url("../img/secondimage.jpg");
