@@ -118,6 +118,13 @@ p {
     background-attachment: fixed;
 }
 
+/*========================================================
+                        Parallax Gen-for about
+=========================================================*/
+
+
+
+
 /*=====================================
             Buttons
 ======================================*/
@@ -278,7 +285,11 @@ p {
     width: 60%;
     height: 700px;
     float: right;
-    background-color:#41464b;
+    background-image: url("../img/longtwo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    
     clip-path: polygon(0 0,100% 0,100% 100%,50% 100%);
 }
 
