@@ -114,11 +114,16 @@ function linksearch() {
         window.open('https://github.com/hutwagnert/liri');
     }  else if (currentid === 'mysql') {
         window.open('https://github.com/hutwagnert/SQLbananza');
+    }
+    else if (currentid === 'express') {
+        window.open('https://expressfriendfinder.herokuapp.com/');
     }else {
         console.log("error");
     }
     hidemodal();
 }
+
+
 function githubsearch() {
     console.log(currentid);
     if (currentid === 'project') {
@@ -131,6 +136,8 @@ function githubsearch() {
         window.open('https://github.com/hutwagnert/liri');
     } else if (currentid === 'mysql') {
         window.open('https://github.com/hutwagnert/SQLbananza');
+    }else if (currentid === 'express') {
+        window.open('https://github.com/hutwagnert/inexpress');
     }else {
         console.log("error");
     }
