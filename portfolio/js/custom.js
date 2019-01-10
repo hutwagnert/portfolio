@@ -72,8 +72,7 @@ function copyToClipboard() {
     document.execCommand("copy");
     $temp.remove();
 }
-// $(document).on("click",'.emailcopier', function() {     copyToClipboard();
-// });
+
 var currentid = "";
 $(document).on("click", '.lirisearch', function () {
     $('#popupmodal').modal('show');
@@ -88,6 +87,10 @@ $(document).on("click", '.rpg', function () {
     currentid = this.id;
 });
 $(document).on("click", '.project', function () {
+    $('#popupmodal').modal('show');
+    currentid = this.id;
+});
+$(document).on("click", '.mysql', function () {
     $('#popupmodal').modal('show');
     currentid = this.id;
 });
@@ -109,7 +112,9 @@ function linksearch() {
         window.open('https://hutwagnert.github.io/unit-6/unit-6-giphy/');
     } else if (currentid === 'lirisearch') {
         window.open('https://github.com/hutwagnert/liri');
-    } else {
+    }  else if (currentid === 'mysql') {
+        window.open('https://github.com/hutwagnert/SQLbananza');
+    }else {
         console.log("error");
     }
     hidemodal();
@@ -124,13 +129,15 @@ function githubsearch() {
         window.open('https://github.com/hutwagnert/unit-6');
     } else if (currentid === 'lirisearch') {
         window.open('https://github.com/hutwagnert/liri');
-    } else {
+    } else if (currentid === 'mysql') {
+        window.open('https://github.com/hutwagnert/SQLbananza');
+    }else {
         console.log("error");
     }
     hidemodal();
 }
 /*========================================================
-                        copy resume
+                        copy email
 =========================================================*/
 
 document
@@ -148,3 +155,7 @@ function copy_password() {
     document.execCommand("Copy");
     textArea.remove();
 }
+$(document).on("hover", '.testimonial-author', function () {
+    $(".icontest").css({"animation":"shake 0.5s","animation-iteration-count":"infinite"});
+  
+});
