@@ -111,12 +111,14 @@ function linksearch() {
     } else if (currentid === 'giphy') {
         window.open('https://hutwagnert.github.io/unit-6/unit-6-giphy/');
     } else if (currentid === 'lirisearch') {
-        window.open('https://github.com/hutwagnert/liri');
+        window.open('https://inthekitchen-ucb.herokuapp.com/');
     }  else if (currentid === 'mysql') {
         window.open('https://github.com/hutwagnert/SQLbananza');
     }
     else if (currentid === 'express') {
         window.open('https://expressfriendfinder.herokuapp.com/');
+    }else if (currentid === 'burgertime') {
+        window.open('https://calm-chamber-50496.herokuapp.com/');
     }else {
         console.log("error");
     }
@@ -133,11 +135,13 @@ function githubsearch() {
     } else if (currentid === 'giphy') {
         window.open('https://github.com/hutwagnert/unit-6');
     } else if (currentid === 'lirisearch') {
-        window.open('https://github.com/hutwagnert/liri');
+        window.open('https://github.com/ucb-project/project-2');
     } else if (currentid === 'mysql') {
         window.open('https://github.com/hutwagnert/SQLbananza');
     }else if (currentid === 'express') {
         window.open('https://github.com/hutwagnert/inexpress');
+    }else if (currentid === 'burgertime') {
+        window.open('https://github.com/hutwagnert/burgertime');
     }else {
         console.log("error");
     }
