@@ -54,7 +54,7 @@ $(document).on("click", '.danielLinkedin', function () {
 });
 //my stuff
 $(document).on("click", '.linkedin', function () {
-    window.open('www.linkedin.com/in/tatehut'
+    window.open('https://www.linkedin.com/in/tatehut/'
     );
 });
 $(document).on("click", '.github', function () {
