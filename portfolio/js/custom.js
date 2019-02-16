@@ -56,7 +56,7 @@ $(function(){
                         on clicks
 =========================================================*/
 $(document).on("click",'.linkedin', function() {
-    window.open('https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile');
+    window.open('https://www.linkedin.com/in/tate-hutwagner-b50826131');
      });
      $(document).on("click",'.github', function() {
         window.open('https://github.com/hutwagnert');
