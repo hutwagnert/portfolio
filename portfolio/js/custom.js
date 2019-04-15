@@ -44,7 +44,6 @@ $(function () {
 /*========================================================
                         on clicks
 =========================================================*/
-<<<<<<< HEAD
 $(document).on("click",'.linkedin', function() {
     window.open('https://www.linkedin.com/in/tate-hutwagner-b50826131');
      });
@@ -81,8 +80,6 @@ var currentid ="";
                         $('#popupmodal').modal('show');
                         currentid=this.id;  
                      });
-=======
->>>>>>> 814c3e1b6b41948b2b220e5971b7791830cafcc2
 
 //dannys linked in
 
@@ -133,6 +130,10 @@ $(document).on("click", '.mysql', function () {
     $('#popupmodal').modal('show');
     currentid = this.id;
 });
+$(document).on("click", '.board', function () {
+    $('#popupmodal').modal('show');
+    currentid = this.id;
+});
 
 $(document).on("click", '.contactme', function () {
 
@@ -141,6 +142,8 @@ $(document).on("click", '.contactme', function () {
 function hidemodal() {
     $('#popupmodal').modal('hide');
 }
+
+
 function linksearch() {
     console.log(currentid);
     if (currentid === 'project') {
@@ -158,6 +161,8 @@ function linksearch() {
         window.open('https://expressfriendfinder.herokuapp.com/');
     }else if (currentid === 'burgertime') {
         window.open('https://calm-chamber-50496.herokuapp.com/');
+    }else if (currentid === 'burgertime') {
+            window.open('https://bountybonus.herokuapp.com/');
     }else {
         console.log("error");
     }
@@ -181,11 +186,14 @@ function githubsearch() {
         window.open('https://github.com/hutwagnert/inexpress');
     }else if (currentid === 'burgertime') {
         window.open('https://github.com/hutwagnert/burgertime');
+    }else if (currentid === 'board') {
+        window.open('https://github.com/teambestproject/BountyBoard');
     }else {
         console.log("error");
     }
     hidemodal();
 }
+https://github.com/teambestproject/BountyBoard
 /*========================================================
                         copy email
 =========================================================*/
